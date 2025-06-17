@@ -11,62 +11,98 @@
 </head>
 
 <body class="bg-[#7C573C]">
-    <div class="w-full flex items-center justify-center text-white text-2xl font-bold">
-        <!-- Texto para telas pequenas (nada) -->
-        <span class="block sm:hidden bg-red-500 w-full h-full">
-            Tamanho: Pequeno (nada)
-        </span>
 
-        <!-- Texto para telas médias (sm) -->
-        <span class="hidden sm:block md:hidden bg-green-500 w-full h-full">
-            Tamanho: SM (médio)
-        </span>
+    <div class="bg-[#221518] w-60 h-[100vh] absolute z-[-99] sm:w-70 md:w-200"></div>
 
-        <!-- Texto para telas grandes (lg) -->
-        <span class="hidden md:block bg-blue-500 w-full h-full">
-            Tamanho: MD (grande)
-        </span>
-    </div>
-
-    <div class="bg-[#221518] w-40 h-[100vh] absolute z-[-99]"></div>
-
-    <header class="flex items-center justify-between w-[100%]">
+    <header class="flex items-center justify-between w-[100%] px-5 py-2">
         <img src="img/logo.svg" alt="">
 
-        <div class="flex text-white gap-[4vh] mr-10" style="font-family: ADLaM Display, system-ui;">
-            <p>Serviços</p>
-            <p>Produtos</p>
-            <p>Contato</p>
+        <div class="hidden sm:flex gap-5">
+            <img src="img/user.svg" alt="">
+            <img src="img/ph_shopping-cart-light.svg" alt="">
+        </div>
+        <div class="flex text-white gap-[4vh] mr-10 sm:gap-[23px] mr-[15px] md:mr-40" style="font-family: ADLaM Display, system-ui;">
+            <div class="group flex items-center justify-center">
+                <p class="cursor-pointer text-[#FFF8E8] z-10">Casa</p>
+                <img src="img/Hover.svg" alt=""
+                    class="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none top-0">
+            </div>
+            <div class="group flex items-center justify-center">
+                <p class="cursor-pointer text-[#FFF8E8] z-10">Menu</p>
+                <img src="img/Hover.svg" alt=""
+                    class="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none top-0">
+            </div>
+            <div class="group flex items-center justify-center">
+                <p class="cursor-pointer text-[#FFF8E8] z-10">Serviços</p>
+                <img src="img/Hover.svg" alt=""
+                    class="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none top-0">
+            </div>
+            
+            <div class="group flex items-center justify-center hidden absolute sm:flex static">
+                <p class="cursor-pointer text-[#FFF8E8] z-10">Produto</p>
+                <img src="img/Hover.svg" alt=""
+                    class="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none top-0">
+            </div>
+            <div class="group flex items-center justify-center hidden absolute sm:flex static">
+                <p class="cursor-pointer text-[#FFF8E8] z-10">Blog</p>
+                <img src="img/Hover.svg" alt=""
+                    class="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none top-0">
+            </div>
+            <div class="group flex items-center justify-center hidden absolute sm:flex static">
+                <p class="cursor-pointer text-[#FFF8E8] z-10">Contato</p>
+                <img src="img/Hover.svg" alt=""
+                    class="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none top-0">
+            </div>
         </div>
     </header>
 
     <main class="mt-[10%]">
-        <div class="w-full flex items-center justify-center">
-            <img class="absolute z-[-99] bottom-80" src="img/Coffees.svg" alt="">
-            <img class="w-[45vh]" src="img/elza coffee.png" alt="">
+        <div class="w-full flex items-center justify-center sm:justify-start">
+            <img class="absolute z-[-99] mr-10 bottom-80 sm:bottom-40 md: right-0 z-[999]" src="img/Coffees.svg" alt="">
+            <img class="w-[45vh] md:ml-30" src="img/elza coffee.png" alt="">
         </div>
 
-        <div class="w-100vh flex items-center justify-center">
+        <div class="w-100vh flex items-center justify-center sm:justify-start ml-10">
             <div class="z-1000 flex flex-col gap-5 mt-10">
-                <div class="group relative flex  items-center justify-center cursor-pointer w-[200px] h-[70px]">
-                    <p class="absolute text-[#F8E4BE] text-lg" style="font-family: ADLaM Display, system-ui;">Compre Agora
+                <div class="flex text-lg w-47 md:w-80">
+                    <p class="text-[#DABB9E] hidden sm:block" style="font-family: ADLaM Display, system-ui;">
+                        O bom humor de hoje é patrocinado pelo café procure seu café agora
                     </p>
-                    <img src="img/Button 1.png"
-                        class="absolute transition-opacity duration-300 opacity-100 group-hover:opacity-0 z-[-9]" alt="">
-                    <img src="img/Button 2.png"
-                        class="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-[-9]" alt="">
                 </div>
-                <div class="group relative flex items-center justify-center cursor-pointer w-[200px] h-[70px]">
-                    <p class="absolute text-[#F8E4BE] text-lg" style="font-family: ADLaM Display, system-ui;">Catálogo</p>
-                    <img src="img/Button 1.png"
-                        class="absolute transition-opacity duration-300 opacity-100 group-hover:opacity-0 z-[-9]" alt="">
-                    <img src="img/Button 2.png"
-                        class="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-[-9]" alt="">
+
+                <div class="flex flex-col md:flex-row">
+                    <div class="group relative flex  items-center justify-center cursor-pointer w-[200px] h-[70px]">
+                        <p class="absolute text-[#F8E4BE] text-lg" style="font-family: ADLaM Display, system-ui;">Compre Agora
+                        </p>
+                        <img src="img/Button 1.png"
+                            class="absolute transition-opacity duration-300 opacity-100 group-hover:opacity-0 z-[-9]" alt="">
+                        <img src="img/Button 2.png"
+                            class="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-[-9]" alt="">
+                    </div>
+                    <div class="group relative flex items-center justify-center cursor-pointer w-[200px] h-[70px]">
+                        <p class="absolute text-[#F8E4BE] text-lg" style="font-family: ADLaM Display, system-ui;">Catálogo</p>
+                        <img src="img/Button 1.png"
+                            class="absolute transition-opacity duration-300 opacity-100 group-hover:opacity-0 z-[-9]" alt="">
+                        <img src="img/Button 2.png"
+                            class="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-[-9]" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <img class="block absolute bottom-0 right-0 w-[80%] z-[-999] sm:hidden" src="img/celular/café.png" alt="">
-        <img class="hidden absolute bottom-0 right-0 w-[100%] z-[99] sm:block" src="img/tablet/café.png" alt="">
+        <img class="block absolute bottom-0 right-0 w-[80%] sm:hidden" src="img/celular/café.png" alt="">
+        <img class="hidden absolute bottom-0 right-0 w-[100%] z-[99] sm:block md:hidden" src="img/tablet/café.png" alt="">
+        <img class="hidden absolute bottom-0 right-0 w-[80%] z-[99] md:block" src="img/cafe_img.png" alt="">
+
+        <div class="hidden sm:block absolute bottom-0 right-0 mr-9 z-[999] md:left-0 mr-0 ml-20">
+                <div class="flex absolute">
+                    <img src="img/card/Cup1.png" alt="">
+                    <div class="flex flex-col pr-5 justify-end">
+                        <img class="w-45 absolute top-25 left-45" src="img/card/but first coffee.png" alt="">
+                        <img class="w-35 absolute bottom-4 left-53 cursor-pointer" src="img/card/Frame 8.svg" alt="">
+                    </div>
+                </div>
+                <img class="" src="img/card/card.png" alt="">
+            </div>
     </main>
 
 </body>
